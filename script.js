@@ -7,18 +7,20 @@ var alphaLower = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialChar = ['', '!', '"', '#', '$', '%', '&', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '}', '|', '~'];
 
+// password parameters
 var confirmUpperCase = window.confirm("Click 'OK' if you would like upper case letters.");
 var confirmLowerCase = window.confirm("Click 'OK' if you would like lower case letters.");
 var confirmNumeric = window.confirm("Click 'OK' if you would like numerical characters.");
 var confirmSpecial = window.confirm("Click 'OK' if you would like special characters.");
 
-
+// variable list
 var confirmLength = "";
 var confirmUpperCase;
 var confirmLowerCase;
 var confirmNumeric;
 var confirmSpecial;
 
+// function to generate new password
 function generatePassword() {
   var confirmLength = (prompt("How many characters would you like your password to contain?"));
 
